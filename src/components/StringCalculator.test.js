@@ -1,5 +1,10 @@
+import { render, screen, fireEvent } from "@testing-library/react";
+import StringCalculator from "./StringCalculator";
 test("it should return 0 when the input is an empty string", () => {
-    throw new Error();
+    render(<StringCalculator />)
+    fireEvent.change(screen.getByPlaceholderText('Enter numbers'), { target: { value: '' } });
+    fireEvent.click(screen.getByText('Add'));
+    expect(screen.getByText('Result: 0')).toBeInTheDocument();
 })
 
 test('it should return the number itself when the input is a single number', () => {
