@@ -59,7 +59,7 @@ export default function StringCalculator() {
   };
 
   return (
-    <div>
+    <div className="string_calculator">
       <h1>String Calculator</h1>
       <input
         type="text"

@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.string_calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.string_calculator h1 {
+  width: 100%;
+  background-color: lightblue;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.string_calculator input {
+  width: 250px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #cbcbcb;
+}
+
+.string_calculator button {
+  width: 100px;
+  padding: 10px 15px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
